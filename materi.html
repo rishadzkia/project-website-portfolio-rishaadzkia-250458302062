@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="bg-cyan-600 block">Kotak 1 (Block)</div>
+    <div class="bg-amber-200 block">Kotak 1 (Block)</div>
+    <!-- block= pasti turun ke bawah kalo nambah item baru, karena width setiap block itu 
+     full sampai ke ujung -->
+    <br />
+    <span class="bg-amber-300 inline">Kotak 1 (Inline)</span>
+    <span class="bg-amber-600 inline">Kotak 1 (Inline)</span>
+    <!-- inline= item akan ke pinggir atau ke samping jika ketamabahan item -->
+    <!-- inline= gabisa pakai width dan height, karena ukuran dia berbasis pada kontennya -->
+    <br />
+
+    <span class="bg-amber-800 inline-block w-24 h-12">Kotak 1</span>
+    <span class="bg-amber-100 inline-block w-24 h-12">Kotak 1</span>
+    <!-- inline block= bisa ngatur width dan height -->
+    <!-- span= meng-special kan tulisan -->
+    <br />
+    <div class="flex flex-col gap-2 bg-emerald-100">
+      <div class="bg-fuchsia-300 w-16 h-16">A</div>
+      <div class="bg-amber-500 w-16 h-16">B</div>
+      <div class="bg-blue-200 w-16 h-16">C</div>
+    </div>
+    <!-- flex= Berjajar secara horizontal, agar item di dalamnya rata -->
+    <!-- flex-col= Agar jadi vertikal -->
+    <!-- flex= Temenan sama justify content (Atur arah horizontal), Gap, Align (Di tailwind gak ada),
+      Items (Atur arah vertikal) -->
+  </body>
+</html>
